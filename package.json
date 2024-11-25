@@ -1,0 +1,32 @@
+{
+  "name": "emilia",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://jakwrobel.github.io/emilia",
+  "main": "index.html",
+  "type": "module",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "handlebars": "^4.7.8",
+    "postcss": "^8.4.47",
+    "sass": "^1.79.4",
+    "vite": "^5.4.8",
+    "vite-plugin-handlebars": "^2.0.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "test": "jest",
+    "build": "vite build",
+    "lint": "eslint",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
