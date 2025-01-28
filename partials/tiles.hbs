@@ -1,0 +1,8 @@
+<section class="tiles__wrapper">
+    {{#each tiles}}
+    <article class="tiles__item tiles__item--{{@index}}">
+        <h2 class="tiles__item__title">{{this.title}}</h2>
+        <p class="tiles__itemDescription">{{this.description}}</p>
+    </article>
+    {{/each}}
+</section>

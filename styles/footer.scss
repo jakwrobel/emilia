@@ -1,0 +1,6 @@
+.footer{
+    &::before {
+        font: var(--fa-font-solid);
+        content: "\f16d";
+    }
+}

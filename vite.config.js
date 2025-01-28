@@ -24,12 +24,19 @@ function getHtmlEntries() {
   return entries;
 }
 
+const homeTiles =[
+  {"title": "8 lat doświadczenia", "description": "w obszarze marketingu z naciskiem na social media oraz strategie komunikacji"},
+  {"title": "+20 klientów", "description": "ze skuteczną strategią marketingową, komunikacją w social mediach dopasowaną do grupy odbiorców oraz wzrostem sprzedaży"},
+  {"title": "+ 15 branż", "description": "w których działałam do tej pory, m. in.: OZE, turystyka, gastronomia, elektronika, sport, gaming, zdrowie, ubezpieczenia"},
+  {"title": "∞ pula pomysłów", "description": "na kreacje graficzne, teksty, filmy w social mediach i strategie marketingowe dla różnych biznesów"}
+]
+
 export default defineConfig({
   base: '/emilia/',
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'partials'),
-      context: {} 
+      context: {homeTiles} 
     }),
   ],
   css: {

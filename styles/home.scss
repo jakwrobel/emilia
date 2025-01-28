@@ -1,0 +1,140 @@
+.banner {
+  background-color: #f0eff3;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__image {
+    display: none;
+    @media only screen and (min-width: 768px) {
+      display: block;
+      width: 50%;
+      max-width: 700px;
+      height: 500px;
+      background-image: url("./public/images/tel1500.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: changeBackground 6s infinite;
+    }
+  }
+
+  &__textBlock {
+    font-size: 16px;
+    color: #363636;
+    padding: 50px 34px;
+    box-sizing: border-box;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+      max-width: 700px;
+    }
+
+    @media only screen and (min-width: 1024px){
+      text-align: left;
+    }
+  }
+
+  &__textContent{
+    width: fit-content;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 22px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__description {
+    margin: 0;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-top: 20px;
+    background: #fad2d2;
+    padding: 20px 30px;
+    border-radius: 40px;
+    color: #363636;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 50px auto 20px;
+    width: fit-content;
+    box-shadow: 9px 8px 24px -9px rgba(66, 68, 90, 1);;
+
+    @media only screen and (min-width: 1024px){
+      margin: 20px 0 0 auto;
+    }
+  }
+}
+
+.tiles {
+  &__wrapper {
+    display: flex;
+    color: #363636;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+      flex-flow: row wrap;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+    }
+    &--0 {
+      background: #e5e8f5;
+    }
+
+    &--1 {
+      background: #ebe8d2;
+    }
+
+    &--2 {
+      background: #fad2d2;
+    }
+
+    &--3 {
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: 25%;
+    }
+  }
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("./public/images/tel1500.png");
+  }
+  33.333% {
+    background-image: url("./public/images/tel2500.png");
+  }
+  66.666% {
+    background-image: url("./public/images/tel3500.png");
+  }
+  100% {
+    background-image: url("./public/images/tel1500.png");
+  }
+}
